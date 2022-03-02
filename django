@@ -1,0 +1,176 @@
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>python manage.py runserver
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'material'
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\pathlib.py", line 1161, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\pathlib.py", line 200, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>python manage.py runserver
+D:\1_en_th\SkyDict_Server_Django-master\nmt_server was unexpected at this time.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>Watching for file changes with StatReloader
+'Watching' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>Exception in thread django-main-thread:
+'Exception' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>Traceback (most recent call last):
+'Traceback' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\threading.py", line 926, in _bootstrap_inner
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    self.run()
+'self.run' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\threading.py", line 870, in run
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    self._target(*self._args, **self._kwargs)
+'self._target' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    fn(*args, **kwargs)
+'fn' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    autoreload.raise_last_exception()
+'autoreload.raise_last_exception' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    raise _exception[1]
+'raise' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    autoreload.check_errors(django.setup)()
+'autoreload.check_errors' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    fn(*args, **kwargs)
+'fn' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\__init__.py", line 24, in setup
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    apps.populate(settings.INSTALLED_APPS)
+'apps.populate' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\apps\registry.py", line 91, in populate
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    app_config = AppConfig.create(entry)
+'app_config' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "D:\1_en_th\SkyDict_Server_Django-master\nmt_server\env\lib\site-packages\django\apps\config.py", line 116, in create
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    mod = import_module(mod_path)
+'mod' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>  File "C:\Users\033\AppData\Local\Programs\Python\Python37\lib\importlib\__init__.py", line 127, in import_module
+'File' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\1_en_th\SkyDict_Server_Django-master\nmt_server>    return _bootstrap._gcd_import(name[level:], package, level)
+'return' is not recognized as an internal or external command,
+operable program or batch file.
